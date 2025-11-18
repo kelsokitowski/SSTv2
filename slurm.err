@@ -1,0 +1,465 @@
+EDQNMstratifiedModules.F90:87:12:
+
+   87 |     if (any(E0T /= E0T)) then
+      |            1
+Warning: Inequality comparison for REAL(8) at (1) [-Wcompare-reals]
+EDQNMstratifiedModules.F90:88:73:
+
+   88 |        print *, "NaN detected in E0T; first index = ", minloc(E0T, MASK=(E0T /= E0T))
+      |                                                                         1
+Warning: Inequality comparison for REAL(8) at (1) [-Wcompare-reals]
+EDQNMstratifiedModules.F90:91:12:
+
+   91 |     if (any(E0 /= E0)) then
+      |            1
+Warning: Inequality comparison for REAL(8) at (1) [-Wcompare-reals]
+EDQNMstratifiedModules.F90:92:72:
+
+   92 |        print *, "NaN detected in E0; first index = ", minloc(E0T, MASK=(E0 /= E0))
+      |                                                                        1
+Warning: Inequality comparison for REAL(8) at (1) [-Wcompare-reals]
+EDQNMstratifiedModules.F90:95:12:
+
+   95 |     if (any(EF /= EF)) then
+      |            1
+Warning: Inequality comparison for REAL(8) at (1) [-Wcompare-reals]
+EDQNMstratifiedModules.F90:96:74:
+
+   96 |        print *, "NaN detected in Nv_1; first index = ", minloc(E0T, MASK=(EF /= EF))
+      |                                                                          1
+Warning: Inequality comparison for REAL(8) at (1) [-Wcompare-reals]
+EDQNMstratifiedModules.F90:184:14:
+
+  184 |           if (kernel1/=kernel1) then
+      |              1
+Warning: Inequality comparison for REAL(8) at (1) [-Wcompare-reals]
+EDQNMstratifiedModules.F90:192:15:
+
+  192 |            if (kernel21/=kernel21) then
+      |               1
+Warning: Inequality comparison for REAL(8) at (1) [-Wcompare-reals]
+EDQNMstratifiedModules.F90:196:15:
+
+  196 |            if (kernel22/=kernel22) then
+      |               1
+Warning: Inequality comparison for REAL(8) at (1) [-Wcompare-reals]
+EDQNMstratifiedModules.F90:200:15:
+
+  200 |            if (kernel23/=kernel23) then
+      |               1
+Warning: Inequality comparison for REAL(8) at (1) [-Wcompare-reals]
+EDQNMstratifiedModules.F90:204:15:
+
+  204 |            if (kernel24/=kernel24) then
+      |               1
+Warning: Inequality comparison for REAL(8) at (1) [-Wcompare-reals]
+EDQNMstratifiedModules.F90:208:15:
+
+  208 |            if (kernel25/=kernel25) then
+      |               1
+Warning: Inequality comparison for REAL(8) at (1) [-Wcompare-reals]
+EDQNMstratifiedModules.F90:215:20:
+
+  215 |                 if (weight(pj,qj,kj)/= weight(pj,qj,kj)) then
+      |                    1
+Warning: Inequality comparison for REAL(8) at (1) [-Wcompare-reals]
+EDQNMstratifiedModules.F90:277:20:
+
+  277 |                 if (ST_NL_ISO/=ST_NL_ISO) then
+      |                    1
+Warning: Inequality comparison for REAL(8) at (1) [-Wcompare-reals]
+timeRoutines.F90:195:24:
+
+  195 |                 if (any(Nv_1 /= Nv_1)) then
+      |                        1
+Warning: Inequality comparison for REAL(8) at (1) [-Wcompare-reals]
+timeRoutines.F90:196:92:
+
+  196 |                         print *, "NaN detected in Nv_1; first index = ", minloc(Nv_1, MASK=(Nv_1 /= Nv_1))
+      |                                                                                            1
+Warning: Inequality comparison for REAL(8) at (1) [-Wcompare-reals]
+timeRoutines.F90:216:18:
+
+  216 |           if (any(Enew /= Enew)) then
+      |                  1
+Warning: Inequality comparison for REAL(8) at (1) [-Wcompare-reals]
+timeRoutines.F90:221:18:
+
+  221 |           if (any(EX2_1 /= EX2_1)) then
+      |                  1
+Warning: Inequality comparison for REAL(8) at (1) [-Wcompare-reals]
+timeRoutines.F90:224:18:
+
+  224 |           if (any(Q_1 /= Q_1)) then
+      |                  1
+Warning: Inequality comparison for REAL(8) at (1) [-Wcompare-reals]
+timeRoutines.F90:227:18:
+
+  227 |           if (any(v_1 /= v_1)) then
+      |                  1
+Warning: Inequality comparison for REAL(8) at (1) [-Wcompare-reals]
+timeRoutines.F90:230:18:
+
+  230 |           if (any(Nv_1 /= Nv_1)) then
+      |                  1
+Warning: Inequality comparison for REAL(8) at (1) [-Wcompare-reals]
+timeRoutines.F90:19:21:
+
+   19 |        ExtForcing, du, qjMin, qjMax, ySquaredAvg, A1, A3, &
+      |                     1
+Warning: Unused dummy argument ‘du’ at (1) [-Wunused-dummy-argument]
+timeRoutines.F90:89:39:
+
+   89 |     real(dp) :: KE_local, KE, eps_local, epzilon, Froude, Re_l, BuoyancyRe
+      |                                       1
+Warning: Unused variable ‘eps_local’ declared at (1) [-Wunused-variable]
+timeRoutines.F90:89:24:
+
+   89 |     real(dp) :: KE_local, KE, eps_local, epzilon, Froude, Re_l, BuoyancyRe
+      |                        1
+Warning: Unused variable ‘ke_local’ declared at (1) [-Wunused-variable]
+timeRoutines.F90:19:35:
+
+   19 |        ExtForcing, du, qjMin, qjMax, ySquaredAvg, A1, A3, &
+      |                                   1
+Warning: Unused dummy argument ‘qjmax’ at (1) [-Wunused-dummy-argument]
+timeRoutines.F90:19:28:
+
+   19 |        ExtForcing, du, qjMin, qjMax, ySquaredAvg, A1, A3, &
+      |                            1
+Warning: Unused dummy argument ‘qjmin’ at (1) [-Wunused-dummy-argument]
+timeRoutines.F90:19:48:
+
+   19 |        ExtForcing, du, qjMin, qjMax, ySquaredAvg, A1, A3, &
+      |                                                1
+Warning: Unused dummy argument ‘ysquaredavg’ at (1) [-Wunused-dummy-argument]
+mainSST.F90:83:32:
+
+   83 | real(dp) :: epsTestOnNuCubed, c0, du, kai, TauL0, gammagh,h,ySquaredAvg
+      |                                1
+Warning: Unused variable ‘c0’ declared at (1) [-Wunused-variable]
+mainSST.F90:80:32:
+
+   80 | real(dp) :: a, A1, A3, D, deltaT, deltaT_Eta, deltaTL, dt_v, epsTest, epzilon, eta
+      |                                1
+Warning: Unused variable ‘deltat’ declared at (1) [-Wunused-variable]
+mainSST.F90:80:44:
+
+   80 | real(dp) :: a, A1, A3, D, deltaT, deltaT_Eta, deltaTL, dt_v, epsTest, epzilon, eta
+      |                                            1
+Warning: Unused variable ‘deltat_eta’ declared at (1) [-Wunused-variable]
+mainSST.F90:60:17:
+
+   60 | real(dp) :: dt(4)
+      |                 1
+Warning: Unused variable ‘dt’ declared at (1) [-Wunused-variable]
+mainSST.F90:80:59:
+
+   80 | real(dp) :: a, A1, A3, D, deltaT, deltaT_Eta, deltaTL, dt_v, epsTest, epzilon, eta
+      |                                                           1
+Warning: Unused variable ‘dt_v’ declared at (1) [-Wunused-variable]
+mainSST.F90:71:31:
+
+   71 | real(dp) :: duu1(KLENGTH_PARAM), duu2(KLENGTH_PARAM), duu3(KLENGTH_PARAM), duu4(KLENGTH_PARAM), duu5(KLENGTH_PARAM),&
+      |                               1
+Warning: Unused variable ‘duu1’ declared at (1) [-Wunused-variable]
+mainSST.F90:71:52:
+
+   71 | real(dp) :: duu1(KLENGTH_PARAM), duu2(KLENGTH_PARAM), duu3(KLENGTH_PARAM), duu4(KLENGTH_PARAM), duu5(KLENGTH_PARAM),&
+      |                                                    1
+Warning: Unused variable ‘duu2’ declared at (1) [-Wunused-variable]
+mainSST.F90:71:73:
+
+   71 | real(dp) :: duu1(KLENGTH_PARAM), duu2(KLENGTH_PARAM), duu3(KLENGTH_PARAM), duu4(KLENGTH_PARAM), duu5(KLENGTH_PARAM),&
+      |                                                                         1
+Warning: Unused variable ‘duu3’ declared at (1) [-Wunused-variable]
+mainSST.F90:71:94:
+
+   71 | real(dp) :: duu1(KLENGTH_PARAM), duu2(KLENGTH_PARAM), duu3(KLENGTH_PARAM), duu4(KLENGTH_PARAM), duu5(KLENGTH_PARAM),&
+      |                                                                                              1
+Warning: Unused variable ‘duu4’ declared at (1) [-Wunused-variable]
+mainSST.F90:71:115:
+
+   71 | real(dp) :: duu1(KLENGTH_PARAM), duu2(KLENGTH_PARAM), duu3(KLENGTH_PARAM), duu4(KLENGTH_PARAM), duu5(KLENGTH_PARAM),&
+      |                                                                                                                   1
+Warning: Unused variable ‘duu5’ declared at (1) [-Wunused-variable]
+mainSST.F90:72:27:
+
+   72 |         duu6(KLENGTH_PARAM)
+      |                           1
+Warning: Unused variable ‘duu6’ declared at (1) [-Wunused-variable]
+mainSST.F90:61:50:
+
+   61 | real(dp) :: E(KLENGTH_PARAM), EHdir(KLENGTH_PARAM), EHdirNew(KLENGTH_PARAM), EHpol(KLENGTH_PARAM), EHpolNew(KLENGTH_PARAM)
+      |                                                  1
+Warning: Unused variable ‘ehdir’ declared at (1) [-Wunused-variable]
+mainSST.F90:61:75:
+
+   61 | real(dp) :: E(KLENGTH_PARAM), EHdir(KLENGTH_PARAM), EHdirNew(KLENGTH_PARAM), EHpol(KLENGTH_PARAM), EHpolNew(KLENGTH_PARAM)
+      |                                                                           1
+Warning: Unused variable ‘ehdirnew’ declared at (1) [-Wunused-variable]
+mainSST.F90:61:97:
+
+   61 | real(dp) :: E(KLENGTH_PARAM), EHdir(KLENGTH_PARAM), EHdirNew(KLENGTH_PARAM), EHpol(KLENGTH_PARAM), EHpolNew(KLENGTH_PARAM)
+      |                                                                                                 1
+Warning: Unused variable ‘ehpol’ declared at (1) [-Wunused-variable]
+mainSST.F90:61:122:
+
+   61 | real(dp) :: E(KLENGTH_PARAM), EHdir(KLENGTH_PARAM), EHdirNew(KLENGTH_PARAM), EHpol(KLENGTH_PARAM), EHpolNew(KLENGTH_PARAM)
+      |                                                                                                                          1
+Warning: Unused variable ‘ehpolnew’ declared at (1) [-Wunused-variable]
+mainSST.F90:62:50:
+
+   62 | real(dp) :: ET(KLENGTH_PARAM), Enew(KLENGTH_PARAM), ETH(KLENGTH_PARAM), ETHnew(KLENGTH_PARAM), ETnew(KLENGTH_PARAM)
+      |                                                  1
+Warning: Unused variable ‘enew’ declared at (1) [-Wunused-variable]
+mainSST.F90:80:68:
+
+   80 | real(dp) :: a, A1, A3, D, deltaT, deltaT_Eta, deltaTL, dt_v, epsTest, epzilon, eta
+      |                                                                    1
+Warning: Unused variable ‘epstest’ declared at (1) [-Wunused-variable]
+mainSST.F90:83:28:
+
+   83 | real(dp) :: epsTestOnNuCubed, c0, du, kai, TauL0, gammagh,h,ySquaredAvg
+      |                            1
+Warning: Unused variable ‘epstestonnucubed’ declared at (1) [-Wunused-variable]
+mainSST.F90:62:29:
+
+   62 | real(dp) :: ET(KLENGTH_PARAM), Enew(KLENGTH_PARAM), ETH(KLENGTH_PARAM), ETHnew(KLENGTH_PARAM), ETnew(KLENGTH_PARAM)
+      |                             1
+Warning: Unused variable ‘et’ declared at (1) [-Wunused-variable]
+mainSST.F90:62:70:
+
+   62 | real(dp) :: ET(KLENGTH_PARAM), Enew(KLENGTH_PARAM), ETH(KLENGTH_PARAM), ETHnew(KLENGTH_PARAM), ETnew(KLENGTH_PARAM)
+      |                                                                      1
+Warning: Unused variable ‘eth’ declared at (1) [-Wunused-variable]
+mainSST.F90:62:93:
+
+   62 | real(dp) :: ET(KLENGTH_PARAM), Enew(KLENGTH_PARAM), ETH(KLENGTH_PARAM), ETHnew(KLENGTH_PARAM), ETnew(KLENGTH_PARAM)
+      |                                                                                             1
+Warning: Unused variable ‘ethnew’ declared at (1) [-Wunused-variable]
+mainSST.F90:62:115:
+
+   62 | real(dp) :: ET(KLENGTH_PARAM), Enew(KLENGTH_PARAM), ETH(KLENGTH_PARAM), ETHnew(KLENGTH_PARAM), ETnew(KLENGTH_PARAM)
+      |                                                                                                                   1
+Warning: Unused variable ‘etnew’ declared at (1) [-Wunused-variable]
+mainSST.F90:63:28:
+
+   63 | real(dp) :: F(KLENGTH_PARAM), Fnew(KLENGTH_PARAM)
+      |                            1
+Warning: Unused variable ‘f’ declared at (1) [-Wunused-variable]
+mainSST.F90:66:87:
+
+   66 | real(dp) :: Einitial(KLENGTH_PARAM), forcing(6), fl(KLENGTH_PARAM), fEta(KLENGTH_PARAM)
+      |                                                                                       1
+Warning: Unused variable ‘feta’ declared at (1) [-Wunused-variable]
+mainSST.F90:66:66:
+
+   66 | real(dp) :: Einitial(KLENGTH_PARAM), forcing(6), fl(KLENGTH_PARAM), fEta(KLENGTH_PARAM)
+      |                                                                  1
+Warning: Unused variable ‘fl’ declared at (1) [-Wunused-variable]
+mainSST.F90:63:49:
+
+   63 | real(dp) :: F(KLENGTH_PARAM), Fnew(KLENGTH_PARAM)
+      |                                                 1
+Warning: Unused variable ‘fnew’ declared at (1) [-Wunused-variable]
+mainSST.F90:66:47:
+
+   66 | real(dp) :: Einitial(KLENGTH_PARAM), forcing(6), fl(KLENGTH_PARAM), fEta(KLENGTH_PARAM)
+      |                                               1
+Warning: Unused variable ‘forcing’ declared at (1) [-Wunused-variable]
+mainSST.F90:81:18:
+
+   81 | real(dp) :: Froude, NotintegerVal, k, K0, KE0, L, N, nu, Pr, Re_l, Re_taylor
+      |                  1
+Warning: Unused variable ‘froude’ declared at (1) [-Wunused-variable]
+mainSST.F90:83:57:
+
+   83 | real(dp) :: epsTestOnNuCubed, c0, du, kai, TauL0, gammagh,h,ySquaredAvg
+      |                                                         1
+Warning: Unused variable ‘gammagh’ declared at (1) [-Wunused-variable]
+mainSST.F90:64:31:
+
+   64 | real(dp) :: HDIR(KLENGTH_PARAM), HPOL(KLENGTH_PARAM), HT(KLENGTH_PARAM)
+      |                               1
+Warning: Unused variable ‘hdir’ declared at (1) [-Wunused-variable]
+mainSST.F90:64:52:
+
+   64 | real(dp) :: HDIR(KLENGTH_PARAM), HPOL(KLENGTH_PARAM), HT(KLENGTH_PARAM)
+      |                                                    1
+Warning: Unused variable ‘hpol’ declared at (1) [-Wunused-variable]
+mainSST.F90:64:71:
+
+   64 | real(dp) :: HDIR(KLENGTH_PARAM), HPOL(KLENGTH_PARAM), HT(KLENGTH_PARAM)
+      |                                                                       1
+Warning: Unused variable ‘ht’ declared at (1) [-Wunused-variable]
+mainSST.F90:81:36:
+
+   81 | real(dp) :: Froude, NotintegerVal, k, K0, KE0, L, N, nu, Pr, Re_l, Re_taylor
+      |                                    1
+Warning: Unused variable ‘k’ declared at (1) [-Wunused-variable]
+mainSST.F90:83:41:
+
+   83 | real(dp) :: epsTestOnNuCubed, c0, du, kai, TauL0, gammagh,h,ySquaredAvg
+      |                                         1
+Warning: Unused variable ‘kai’ declared at (1) [-Wunused-variable]
+mainSST.F90:78:27:
+
+   78 | integer  :: kLengthTest, kj, v, v1, nSteps, timesteps, storeCount, y, kjl
+      |                           1
+Warning: Unused variable ‘kj’ declared at (1) [-Wunused-variable]
+mainSST.F90:78:73:
+
+   78 | integer  :: kLengthTest, kj, v, v1, nSteps, timesteps, storeCount, y, kjl
+      |                                                                         1
+Warning: Unused variable ‘kjl’ declared at (1) [-Wunused-variable]
+mainSST.F90:78:23:
+
+   78 | integer  :: kLengthTest, kj, v, v1, nSteps, timesteps, storeCount, y, kjl
+      |                       1
+Warning: Unused variable ‘klengthtest’ declared at (1) [-Wunused-variable]
+mainSST.F90:79:51:
+
+   79 | integer  :: local_kLength, local_kStart, local_kEnd, termFlag,nPrint,qjMin,qjMax
+      |                                                   1
+Warning: Unused variable ‘local_kend’ declared at (1) [-Wunused-variable]
+mainSST.F90:79:25:
+
+   79 | integer  :: local_kLength, local_kStart, local_kEnd, termFlag,nPrint,qjMin,qjMax
+      |                         1
+Warning: Unused variable ‘local_klength’ declared at (1) [-Wunused-variable]
+mainSST.F90:79:39:
+
+   79 | integer  :: local_kLength, local_kStart, local_kEnd, termFlag,nPrint,qjMin,qjMax
+      |                                       1
+Warning: Unused variable ‘local_kstart’ declared at (1) [-Wunused-variable]
+mainSST.F90:69:39:
+
+   69 | real(dp) :: localRHSeqn1(KLENGTH_PARAM), localRHSeqn2(KLENGTH_PARAM), localRHSeqn3(KLENGTH_PARAM),&
+      |                                       1
+Warning: Unused variable ‘localrhseqn1’ declared at (1) [-Wunused-variable]
+mainSST.F90:69:68:
+
+   69 | real(dp) :: localRHSeqn1(KLENGTH_PARAM), localRHSeqn2(KLENGTH_PARAM), localRHSeqn3(KLENGTH_PARAM),&
+      |                                                                    1
+Warning: Unused variable ‘localrhseqn2’ declared at (1) [-Wunused-variable]
+mainSST.F90:69:97:
+
+   69 | real(dp) :: localRHSeqn1(KLENGTH_PARAM), localRHSeqn2(KLENGTH_PARAM), localRHSeqn3(KLENGTH_PARAM),&
+      |                                                                                                 1
+Warning: Unused variable ‘localrhseqn3’ declared at (1) [-Wunused-variable]
+mainSST.F90:70:35:
+
+   70 |         localRHSeqn4(KLENGTH_PARAM), localRHSeqn5(KLENGTH_PARAM), localRHSeqn6(KLENGTH_PARAM)
+      |                                   1
+Warning: Unused variable ‘localrhseqn4’ declared at (1) [-Wunused-variable]
+mainSST.F90:70:64:
+
+   70 |         localRHSeqn4(KLENGTH_PARAM), localRHSeqn5(KLENGTH_PARAM), localRHSeqn6(KLENGTH_PARAM)
+      |                                                                1
+Warning: Unused variable ‘localrhseqn5’ declared at (1) [-Wunused-variable]
+mainSST.F90:70:93:
+
+   70 |         localRHSeqn4(KLENGTH_PARAM), localRHSeqn5(KLENGTH_PARAM), localRHSeqn6(KLENGTH_PARAM)
+      |                                                                                             1
+Warning: Unused variable ‘localrhseqn6’ declared at (1) [-Wunused-variable]
+mainSST.F90:65:29:
+
+   65 | real(dp) :: mu(KLENGTH_PARAM), mu1(KLENGTH_PARAM), mu3(KLENGTH_PARAM)
+      |                             1
+Warning: Unused variable ‘mu’ declared at (1) [-Wunused-variable]
+mainSST.F90:65:49:
+
+   65 | real(dp) :: mu(KLENGTH_PARAM), mu1(KLENGTH_PARAM), mu3(KLENGTH_PARAM)
+      |                                                 1
+Warning: Unused variable ‘mu1’ declared at (1) [-Wunused-variable]
+mainSST.F90:65:69:
+
+   65 | real(dp) :: mu(KLENGTH_PARAM), mu1(KLENGTH_PARAM), mu3(KLENGTH_PARAM)
+      |                                                                     1
+Warning: Unused variable ‘mu3’ declared at (1) [-Wunused-variable]
+mainSST.F90:81:51:
+
+   81 | real(dp) :: Froude, NotintegerVal, k, K0, KE0, L, N, nu, Pr, Re_l, Re_taylor
+      |                                                   1
+Warning: Unused variable ‘n’ declared at (1) [-Wunused-variable]
+mainSST.F90:81:33:
+
+   81 | real(dp) :: Froude, NotintegerVal, k, K0, KE0, L, N, nu, Pr, Re_l, Re_taylor
+      |                                 1
+Warning: Unused variable ‘notintegerval’ declared at (1) [-Wunused-variable]
+mainSST.F90:78:42:
+
+   78 | integer  :: kLengthTest, kj, v, v1, nSteps, timesteps, storeCount, y, kjl
+      |                                          1
+Warning: Unused variable ‘nsteps’ declared at (1) [-Wunused-variable]
+mainSST.F90:14:58:
+
+   14 |   integer :: rank, size_Of_Cluster, ierr, passiveICtrigger, SSflag
+      |                                                          1
+Warning: Unused variable ‘passiveictrigger’ declared at (1) [-Wunused-variable]
+mainSST.F90:88:35:
+
+   88 |   double precision, parameter :: pi = 3.14159265358979323846264338327950288419716939937510
+      |                                   1
+Warning: Unused parameter ‘pi’ declared at (1) [-Wunused-parameter]
+mainSST.F90:67:34:
+
+   67 | real(dp) :: RHSeqn1(KLENGTH_PARAM), RHSeqn2(KLENGTH_PARAM), RHSeqn3(KLENGTH_PARAM),&
+      |                                  1
+Warning: Unused variable ‘rhseqn1’ declared at (1) [-Wunused-variable]
+mainSST.F90:67:58:
+
+   67 | real(dp) :: RHSeqn1(KLENGTH_PARAM), RHSeqn2(KLENGTH_PARAM), RHSeqn3(KLENGTH_PARAM),&
+      |                                                          1
+Warning: Unused variable ‘rhseqn2’ declared at (1) [-Wunused-variable]
+mainSST.F90:67:82:
+
+   67 | real(dp) :: RHSeqn1(KLENGTH_PARAM), RHSeqn2(KLENGTH_PARAM), RHSeqn3(KLENGTH_PARAM),&
+      |                                                                                  1
+Warning: Unused variable ‘rhseqn3’ declared at (1) [-Wunused-variable]
+mainSST.F90:68:30:
+
+   68 |         RHSeqn4(KLENGTH_PARAM), RHSeqn5(KLENGTH_PARAM), RHSeqn6(KLENGTH_PARAM)
+      |                              1
+Warning: Unused variable ‘rhseqn4’ declared at (1) [-Wunused-variable]
+mainSST.F90:68:54:
+
+   68 |         RHSeqn4(KLENGTH_PARAM), RHSeqn5(KLENGTH_PARAM), RHSeqn6(KLENGTH_PARAM)
+      |                                                      1
+Warning: Unused variable ‘rhseqn5’ declared at (1) [-Wunused-variable]
+mainSST.F90:68:78:
+
+   68 |         RHSeqn4(KLENGTH_PARAM), RHSeqn5(KLENGTH_PARAM), RHSeqn6(KLENGTH_PARAM)
+      |                                                                              1
+Warning: Unused variable ‘rhseqn6’ declared at (1) [-Wunused-variable]
+mainSST.F90:78:65:
+
+   78 | integer  :: kLengthTest, kj, v, v1, nSteps, timesteps, storeCount, y, kjl
+      |                                                                 1
+Warning: Unused variable ‘storecount’ declared at (1) [-Wunused-variable]
+mainSST.F90:78:53:
+
+   78 | integer  :: kLengthTest, kj, v, v1, nSteps, timesteps, storeCount, y, kjl
+      |                                                     1
+Warning: Unused variable ‘timesteps’ declared at (1) [-Wunused-variable]
+mainSST.F90:78:30:
+
+   78 | integer  :: kLengthTest, kj, v, v1, nSteps, timesteps, storeCount, y, kjl
+      |                              1
+Warning: Unused variable ‘v’ declared at (1) [-Wunused-variable]
+mainSST.F90:78:34:
+
+   78 | integer  :: kLengthTest, kj, v, v1, nSteps, timesteps, storeCount, y, kjl
+      |                                  1
+Warning: Unused variable ‘v1’ declared at (1) [-Wunused-variable]
+mainSST.F90:77:16:
+
+   77 | real(dp) :: w(4), NtauInv
+      |                1
+Warning: Unused variable ‘w’ declared at (1) [-Wunused-variable]
+mainSST.F90:78:68:
+
+   78 | integer  :: kLengthTest, kj, v, v1, nSteps, timesteps, storeCount, y, kjl
+      |                                                                    1
+Warning: Unused variable ‘y’ declared at (1) [-Wunused-variable]

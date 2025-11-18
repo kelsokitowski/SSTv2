@@ -1,0 +1,14 @@
+#!/bin/bash
+#SBATCH -o Pr1b1.out
+#SBATCH -N 1
+#SBATCH -e slurm.err
+#SBATCH -n 20
+#SBATCH --mem-per-cpu=500MB
+#SBATCH --time 144:00:00
+module purge
+module load OpenMPI
+export kLength=107
+
+mpifort  -O0  -fdefault-real-8 -fdefault-double-8 -fbacktrace kernel_interp.F90 -DkLength=$kLength integrationModules.F90 EDQNMstratifiedModules.F90 job_parameters.F90 getForcing.F90 data_loader_all.F90 timeRoutines.F90 mainSST.F90 -o mainSSTProgram.x
+
+mpirun -n $SLURM_NTASKS ./mainSSTProgram.x
