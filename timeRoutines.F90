@@ -493,7 +493,7 @@ if (rank == root) then
     bfstr = adjustl(bfstr)
 
     ! Create directory path and filename
-    write(dirname, '(A,A)') 'results/param_', trim(bfstr)
+    dirname = 'results/param'
     fname = trim(dirname) // '/checkpointOut.bin'
 
     ! Open file

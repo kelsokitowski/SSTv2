@@ -25,7 +25,7 @@ subroutine load_checkpoint_binary(bf, v_1,v_2,v_3,v_4,v_5,v_6,t,tStar,counter,kL
     !---- build folder name
     write(bfstr,'(G0.6)') bf
     bfstr  = adjustl(bfstr)
-    write(dirname,'(A,A)') 'results/param_', trim(bfstr)
+    dirname = 'results/param'
     fname = trim(dirname)//'/checkpoint.bin'
 
     if (rank==0) then
@@ -91,7 +91,7 @@ subroutine load_weightStuff_binary(bf,kLength,weight,triadFlag,outsideCutCell,in
     if(rank==0)then
        write(bfstr,'(G0.6)') bf
 bfstr  = adjustl(bfstr)
-write(dirname,'(A,A)') 'results/param_', trim(bfstr)
+dirname = 'results/param'
 
 fname = trim(dirname)//'/weightStuff.bin'
         open(10,file=fname,form='unformatted',access='stream',status='old',iostat=ios)
@@ -181,7 +181,7 @@ subroutine load_ETDRKcoeffs_binary_named( bf, kLength,  &
     !-------------------------
     write(bfstr,'(G0.6)') bf
     bfstr = adjustl(bfstr)
-    write(dirname,'(A,A)') 'results/param_',trim(bfstr)
+    dirname = 'results/param'
     fname = trim(dirname)//'/ETDRKcoeffs.bin'
 
     !-------------------------
@@ -320,7 +320,7 @@ subroutine load_mat_files(bf, kLength, kVals, v_1,v_2,v_3,v_4,v_5,v_6, t, tStar,
   !---------------------------------------
  write(bfstr,'(G0.6)') bf
 bfstr  = adjustl(bfstr)
-write(dirname,'(A,A)') 'results/param_', trim(bfstr)
+dirname = 'results/param'
 
 f_kvals = trim(dirname)//'/kVals.bin'
 
@@ -351,7 +351,7 @@ f_kvals = trim(dirname)//'/kVals.bin'
 
   write(bfstr,'(G0.6)') bf
 bfstr  = adjustl(bfstr)
-write(dirname,'(A,A)') 'results/param_', trim(bfstr)
+dirname = 'results/param'
 
 f_EF = trim(dirname)//'/ExtForcing.bin'
 
