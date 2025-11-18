@@ -60,7 +60,7 @@ contains
     logical :: done
 
     ! distributed indexing
-    integer :: local_kLength, local_kStart, local_kEnd, base_kLength, remainder, kj, kjl, i
+    integer :: local_kLength, local_kStart, local_kEnd, remainder, kj, kjl, i
     integer :: recvcounts(1024), displs(1024)  ! Max MPI ranks assumed = 1024
 
     ! fields/scratch - Fixed size arrays
@@ -120,17 +120,14 @@ contains
 
     ! Arrays are fixed-size, no allocation needed
 
-    ! Load-balanced block distribution - distributes remainder across processors
-    base_kLength = kLength / nprocs
+    ! Uneven block distribution
+    local_kLength = kLength / nprocs
     remainder = mod(kLength, nprocs)
     if (rank < remainder) then
-       ! First 'remainder' processors get one extra element
-       local_kLength = base_kLength + 1
-       local_kStart  = rank * (base_kLength + 1) + 1
+       local_kLength = local_kLength + 1
+       local_kStart  = rank * local_kLength + 1
     else
-       ! Remaining processors get base amount
-       local_kLength = base_kLength
-       local_kStart  = remainder * (base_kLength + 1) + (rank - remainder) * base_kLength + 1
+       local_kStart  = remainder * (local_kLength + 1) + (rank - remainder) * local_kLength + 1
     end if
     local_kEnd = local_kStart + local_kLength - 1
     ! Arrays are fixed-size, no allocation needed
