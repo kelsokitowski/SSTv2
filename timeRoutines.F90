@@ -527,6 +527,35 @@ if (rank == root) then
         print '(A,A)', 'Checkpoint written to: ', trim(fname)
     end if
 
+    ! Also write a numbered checkpoint copy
+    write(fname, '(A,A,I0,A)') trim(dirname), '/checkpoint', counter_, '.bin'
+
+    ! Open numbered checkpoint file
+    open(unit=fid, file=fname, form='unformatted', access='stream', &
+         status='replace', iostat=ios)
+    if (ios /= 0) then
+        print *, 'ERROR: Cannot open file: ', trim(fname)
+        stop
+    end if
+
+    ! Write kLength as int32
+    write(fid) int(n, 4)
+
+    ! Write arrays separately (not concatenated)
+    write(fid) v1
+    write(fid) v2
+    write(fid) v3
+    write(fid) v4
+    write(fid) v5
+    write(fid) v6
+
+    ! Write scalars
+    write(fid) t_
+    write(fid) tStar_
+    write(fid) real(counter_, kind=8)
+
+    close(fid)
+
 end subroutine write_checkpoint_bin
   end subroutine run_timeloop_mpi
 
